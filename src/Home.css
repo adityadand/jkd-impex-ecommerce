@@ -1,0 +1,55 @@
+/* src/Home.css */
+.home-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .brand-section {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .brand-link {
+    color: #333; /* Change to the desired color for brand names */
+    text-decoration: none;
+  }
+  
+  .brand-link:hover {
+    text-decoration: underline;
+  }/* src/Home.css */
+.home-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .brand-section {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .brand-section h3 {
+    color: #333; /* Change to the desired color for brand names */
+    margin-bottom: 10px;
+  }
+  
+  .brand-section p {
+    color: #666; /* Change to the desired color for brand descriptions */
+  }
+  
+  .about-section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  
+  .about-section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
