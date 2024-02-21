@@ -1,27 +1,114 @@
 /* src/Navbar.css */
+
 nav {
-    background-color: #333;
-    padding: 10px;
+  background-color: #000; /* Black */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  /* Choose a background color based on your preference (e.g., transparent for hover effect, specific color for branding) */
+  background-color: transparent;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Burger Menu Styles */
+.burger-menu {
+  cursor: pointer;
+  display: none; /* Hide by default for larger screens */
+  position: relative;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Adjusted burger icon styles */
+.burger-menu.open .bar:first-child {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger-menu.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu.open .bar:last-child {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Waterfall Blur Menu Effect with Gradients (optional) */
+.overlay {
+  /* Remove or comment out this section if the blur effect is no longer needed */
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Choose a gradient or background color based on your preference */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+  backdrop-filter: blur(5px); /* Maintain blur effect if using */
+  z-index: 1;
+  opacity: 1; /* Full opacity, adjust if desired */
+  transition: none; /* Remove transition */
+}
+
+.nav-links.open {
+  /* Show navigation links when mobile menu is open */
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 17px; /* Cover entire screen from top */
+  left: -20px;
+  width: 100%;
+  height: 100vh; /* Cover entire screen height */
+  background-color: rgba(0, 0, 0, 0.8); /* Black with 20% transparency */
+  transition: none;
+}
+
+
+.nav-links.open a {
+  color: #ffd700; /* Golden text color */
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide navigation links by default for smaller screens */
   }
-  
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+
+  .burger-menu {
+    display: block; /* Show burger menu for smaller screens */
   }
-  
-  li {
-    display: inline;
-    margin-right: 20px;
+
+  .burger-menu.open + .overlay {
+    display: block; /* Show the overlay when the menu is open */
+    opacity: 100; /* Set opacity to 1 when the menu is open */
   }
-  
-  a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    border-bottom: 2px solid white;
-  }
-  
+}
+
+/* Optional adjustments or enhancements: */
