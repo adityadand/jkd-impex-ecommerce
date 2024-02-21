@@ -6,6 +6,7 @@ import Home from './Home';
 import Brand from './Brand';
 import Navbar from './NavBar';
 import About from './About';
+import ViewProducts from './ViewProducts';
 import ContactUs from './Contact';
 import './App.css';
 
@@ -25,6 +26,7 @@ const App = () => (
         <Route path="/brand/:brandId" element={<Brand />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/about" element={<About />} />
+        <Route path="/view-products" element={<ViewProducts />} />
         <Route path="/" element={<Home brands={brands} />} />
       </Routes>
     </div>
