@@ -8,6 +8,8 @@ import Navbar from './NavBar';
 import About from './About';
 import ViewProducts from './ViewProducts';
 import ContactUs from './Contact';
+import Team from './Team';
+import Chatbot from './Chatbot';
 import './App.css';
 
 
@@ -27,8 +29,10 @@ const App = () => (
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/about" element={<About />} />
         <Route path="/view-products" element={<ViewProducts />} />
+        <Route path="/team" element={<Team />} />
         <Route path="/" element={<Home brands={brands} />} />
       </Routes>
+      <Chatbot />
     </div>
   </Router>
 );

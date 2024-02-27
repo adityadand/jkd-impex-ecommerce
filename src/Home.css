@@ -52,4 +52,36 @@
     padding: 20px;
     margin-top: 20px;
   }
-  
+  /* Animations based on div elements */
+/* Gradients for each brand */
+.brand-section.wonderfresh {
+  background: linear-gradient(to bottom right, #87CEEB, #00BFFF); /* Light Blue gradient for Wonderfresh */
+}
+
+.brand-section.bittr {
+  background: linear-gradient(to bottom right, #FFD700, #FFA500); /* Golden-Yellow gradient for BitteR */
+}
+
+.brand-section.victorprobattery {
+  background: linear-gradient(to bottom right, #6666ff, red);
+  ; /* Thunder battery blue gradient for VictorPro Battery */
+}
+
+.brand-section:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adding box-shadow on hover */
+}
+
+
+
+.brand-section.brand-section.wonderfresh p {
+  color: white; /* Set the color to white or any other desired color */
+}
+
+.brand-section.bittr p {
+  color: white; /* Set the color to white or any other desired color */
+}
+
+.brand-section.victorprobattery p {
+  color: white; /* Set the color to white or any other desired color */
+}

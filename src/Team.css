@@ -1,0 +1,31 @@
+/* src/Team.css */
+.team-container {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .team-member {
+    margin: 10px;
+    text-align: center;
+  }
+  
+  img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .member-info {
+    font-weight: bold;
+  }
+  
+  /* Adjust styles as needed */
+  

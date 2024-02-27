@@ -12,10 +12,10 @@ const Home = () => (
   <div>
     <div className="home-container">
       <h2>Welcome to JKD IMPEX</h2>
-      <p>We specialize in e-commerce shipment of various brands. Check out some of our partnered brands below:</p>
+      <p>We specialize in e-commerce shipment of various brands on large e-commerce platforms like [Amazon , Flipkart] Check out some of our partnered brands below:</p>
 
       {brands.map((brand) => (
-        <div key={brand.id} className="brand-section">
+        <div key={brand.id} className={`brand-section ${brand.name.replace(/\s+/g, '').toLowerCase()}`}>
           <a href={brand.website} target="_blank" rel="noopener noreferrer">
             <h3>{brand.name}</h3>
           </a>
