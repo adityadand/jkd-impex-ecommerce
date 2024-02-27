@@ -29,7 +29,7 @@ const Chatbot = () => {
   };
 
   const handleBotResponse = (userInput) => {
-    let botResponse = 'I am a simple chatbot. Type "Hello" or ask about JKD IMPEX.';
+    let botResponse = 'I am a simple chatbot. Type "Hello" or ask about JKD IMPEX. type help to know commands';
 
     if (userInput.toLowerCase().includes('hello')) {
       botResponse = 'Hello! How can I assist you today?';
@@ -38,11 +38,21 @@ const Chatbot = () => {
     } else if (userInput.toLowerCase().includes('brands')) {
       botResponse = 'JKD IMPEX works with brands such as Wonderfresh, Bittr, and Victor Pro Battery.';
     } else if (userInput.toLowerCase().includes('amazon')) {
-      botResponse = 'Sure! Here is the link to JKD IMPEX Amazon store: https://www.amazon.com/';
+      botResponse = 'Sure! Here is the link to JKD IMPEX Amazon store: https://www.amazon.in/storefront?me=A2OQS6AETKX6XF';
     } else if (userInput.toLowerCase().includes('flipkart')) {
-      botResponse = 'Certainly! Here is the link to JKD IMPEX Flipkart store: https://www.flipkart.com/';
+      botResponse = 'You can search som of our brands directly on flipkart.com';
+    }else if (userInput.toLowerCase().includes('contact')) {
+        botResponse = 'You can mail us at ecom.jkdimpex@gmail.com';
+    }  else if (userInput.toLowerCase().includes('help')) {
+      botResponse = `Available commands:\n
+      1. "Hello" - Greet the chatbot\n
+      2. "About" - Learn about JKD IMPEX\n
+      3. "Brands" - Explore partnered brands\n
+      4. "Amazon" - Get the link to JKD IMPEX Amazon store\n
+      5. "Flipkart" - Get the link to JKD IMPEX Flipkart store\n
+      6. "Contact" - Get contact information\n
+      7. "Help" - Display available commands`;
     }
-
     return botResponse;
   };
 
